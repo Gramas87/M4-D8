@@ -8,8 +8,13 @@ import {BsBell} from 'react-icons/bs'
 import NetflixLogo from "../data/netflix_logo.png"
 import AvatarLogo from "../data/avatar.png"
 import './MyNavbar.css'
+import {Link, useLocation, useNavigate} from "react-router-dom"
 const MyNavbar = (prop) => {
     const {textColor, textMargin}=prop
+
+    const location = useLocation()
+
+    const navigate = useNavigate()
 
     return (
             <Navbar bg="dark"  expand="lg" id="nav">
@@ -18,7 +23,9 @@ const MyNavbar = (prop) => {
                 <Navbar.Collapse id="basic-navbar-nav" >
                     <Nav className="mr-auto">
                         <Nav.Link href="#home" id="home" style={{color: textColor}} >Home</Nav.Link>
+                        <Link to="/tv-shows">
                         <Nav.Link href="#link1" style={{color: textColor}} >Tv Shows</Nav.Link>
+                        </Link>
                         <Nav.Link href="#link2" style={{color: textColor}} >Movies</Nav.Link>
                         <Nav.Link href="#link3" style={{color: textColor}} >Recently Added</Nav.Link>
                         <Nav.Link href="#link4" style={{color: textColor}} >My List</Nav.Link>
