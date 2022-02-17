@@ -23,8 +23,9 @@ const MyNavbar = (prop) => {
                 <Navbar.Collapse id="basic-navbar-nav" >
                     <Nav className="mr-auto">
                         <Nav.Link href="#home" id="home" style={{color: textColor}} >Home</Nav.Link>
-                        <Link to="/tv-shows">
-                        <div style={{color: textColor}} >Tv Shows</div>
+                        <Link to='/tv-shows'>
+                        <div className={"nav-link font-weight-bold" +
+                         (location.pathname === "/tv-shows" ? " active" : "")} style={{color: textColor}} >Tv Shows</div>
                         </Link>
                         <Nav.Link href="#link2" style={{color: textColor}} >Movies</Nav.Link>
                         <Nav.Link href="#link3" style={{color: textColor}} >Recently Added</Nav.Link>
