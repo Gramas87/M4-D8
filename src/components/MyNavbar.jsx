@@ -22,7 +22,9 @@ const MyNavbar = (prop) => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" >
                     <Nav className="mr-auto">
+                        <Link to="/">
                         <Nav.Link href="#home" id="home" style={{color: textColor}} >Home</Nav.Link>
+                        </Link>
                         <Link to='/tv-shows'>
                         <div className={"nav-link font-weight-bold" +
                          (location.pathname === "/tv-shows" ? " active" : "")} style={{color: textColor}} >Tv Shows</div>

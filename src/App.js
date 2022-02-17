@@ -13,11 +13,11 @@ function App(prop) {
       
 
       <Routes>
-      <Route path='/' element={<NetflixBody />} />
+      
         <Route path='/tv-shows' element={<TvShows />} />
-        <Route path="/movieDetails:movieId" element={<MovieDetails />} />
+        <Route path="/" element={<NetflixBody />} />
       </Routes>
-      <NetflixBody />
+      
       <MyFooter />
     </BrowserRouter>
     
