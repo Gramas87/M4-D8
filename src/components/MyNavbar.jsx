@@ -24,7 +24,7 @@ const MyNavbar = (prop) => {
                     <Nav className="mr-auto">
                         <Nav.Link href="#home" id="home" style={{color: textColor}} >Home</Nav.Link>
                         <Link to="/tv-shows">
-                        <Nav.Link href="#link1" style={{color: textColor}} >Tv Shows</Nav.Link>
+                        <div style={{color: textColor}} >Tv Shows</div>
                         </Link>
                         <Nav.Link href="#link2" style={{color: textColor}} >Movies</Nav.Link>
                         <Nav.Link href="#link3" style={{color: textColor}} >Recently Added</Nav.Link>
